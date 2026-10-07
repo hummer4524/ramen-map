@@ -18,6 +18,44 @@
         .space-divider { height: 30px; }
         .ads-space { background: #f0f0f0; text-align: center; padding: 15px; margin: 20px 0; border: 1px dashed #ccc; font-size: 0.8rem; color: #999; border-radius: 5px; }
         footer { text-align: center; margin-top: 40px; font-size: 0.8rem; color: #888; }
+
+        /* 💡 ここから「おまけエリア」用の少し小さめなスタイル */
+        .sub-section-title {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #666;
+            margin: 40px 0 15px 0;
+            position: relative;
+        }
+        .sub-section-title::before, .sub-section-title::after {
+            content: " — ";
+            color: #ccc;
+        }
+        .area-card.omake {
+            background: #fafafa; /* 少しだけ背景をグレーにして区別 */
+            padding: 12px;       /* 通常15pxより少し狭く */
+            border-style: dashed; /* 境界線を点線にしておまけ感を演出 */
+        }
+        .area-card.omake .area-name {
+            font-size: 1.05rem; /* 通常1.2remより小さく */
+        }
+        .area-card.omake .area-comment {
+            font-size: 0.8rem;  /* 通常0.85remより小さく */
+        }
+        .area-card.omake .map-btn {
+            padding: 7px;       /* ボタンを細く小さく */
+            font-size: 0.9rem;
+            background: #888;   /* 主張しすぎないグレー（ホバーでオレンジに） */
+        }
+        .area-card.omake .map-btn:hover {
+            background: var(--main-color);
+        }
+        /* 💡 ここまで */
+
+        /* SNSリンクのスタイル調整 */
+        .sns-links { margin-top: 15px; }
+        .sns-links a { color: #1da1f2; text-decoration: none; font-weight: bold; }
+        .sns-links a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -99,14 +137,40 @@
         </div>
         <div class="area-card">
             <div class="area-name">📍 太白区周辺</div>
-            <p class="area-comment">有名店の長町ラーメンや杉のやを筆頭に、いぶし、 一丞、吉辰など実力店も多い。開いてたらラッキーの成りとや、一蘭、豚山など大型チェーン店も</p>
+            <p class="area-comment">有名店の長町ラーメンや杉のやを筆頭に、いぶし、 一丞、吉辰など実力店も多い。開いてたらラッキーの成りとや、一蘭、豚山など大型チェーン店も</p>
             <a href="taihaku.jpg" target="_blank" class="map-btn">マップを見る</a>
         </div>
+
+        <!-- 🎁 ここから「ちょっとおまけの3マップ」を追加 -->
+        <div class="sub-section-title">おまけの厳選エリアマップ<br>範囲が広すぎるので更新頻度激遅です</div>
+
+        <div class="area-card omake">
+            <div class="area-name">🗺️ 宮城県北エリア</div>
+            <p class="area-comment">気仙沼から多賀城、栗原から大衡まで。 豚野郎、黒の木、ズッケロ、どん、一兎、ふか瀬、デリシャス、浜八道、いちむら、あんず、匠、奏、いぶき、たけうち、こもれ美など </p>
+            <a href="kenhoku.jpg" target="_blank" class="map-btn">おまけマップを見る</a>
+        </div>
+        <div class="area-card omake">
+            <div class="area-name">🗺️ 宮城県南エリア</div>
+            <p class="area-comment">名取から山元、柴田、丸森まで。MENPIRE壮、七だし、碁飯、arakawa、麺組、小十郎、うまづら、八縁、与平次渡、喜凜、會、トミー、ゆるり、LUSH、みの家、ろはん、ソメイヨシ乃、草創、光華飯店、きく家など </p>
+            <a href="kennan.jpg" target="_blank" class="map-btn">おまけマップを見る</a>
+        </div>
+        <div class="area-card omake">
+            <div class="area-name">🗺️ 岩手県大船渡市内</div>
+            <p class="area-comment">まだ紙媒体だった頃のラーメンマップなのでA4横サイズで作っていました。情報古めです。</p>
+            <a href="ofunato.jpg" target="_blank" class="map-btn">おまけマップを見る</a>
+        </div>
+        <!-- 🎁 おまけここまで -->
+
     </div>
 
     <div class="ads-space">　</div>
 
-<footer> <p>© ハマー All rights reserved.</p> <!-- 👇 ここからXへのリンクを追加 --> <div class="sns-links"> <a href="https://x.com/hamavelily" target="_blank" rel="noopener noreferrer"> <!-- 💡 文字で表示する場合 --> 公式X（旧Twitter）はこちら </a> </div> <!-- 👆 ここまで --> </footer>
+    <footer>
+        <p>© ハマー All rights reserved.</p>
+        <div class="sns-links">
+            <a href="https://x.com/hamavelily" target="_blank" rel="noopener noreferrer">公式X（旧Twitter）はこちら</a>
+        </div>
+    </footer>
 
 </body>
 </html>
