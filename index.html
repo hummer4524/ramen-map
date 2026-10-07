@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>仙台ラーメンマップ［2026.10］ | 11エリアの激ウマ情報を網羅！</title>
+    <title>仙台ラーメンマップ | 11エリアの激ウマ情報を網羅！</title>
     <style>
         :root { --main-color: #e44d26; --text-color: #333; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; color: var(--text-color); line-height: 1.6; background-color: #fcfcfc; }
@@ -11,7 +11,8 @@
         h1 { color: var(--main-color); margin: 0 0 10px 0; font-size: 1.8rem; }
         .intro { font-size: 0.95rem; color: #666; margin-bottom: 30px; }
         .area-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .area-name { font-size: 1.2rem; font-weight: bold; margin: 0 0 8px 0; color: #111; display: flex; align-items: center; gap: 5px; }
+        .area-name { font-size: 1.2rem; font-weight: bold; margin: 0 0 4px 0; color: #111; display: flex; align-items: center; gap: 5px; }
+        .area-comment { font-size: 0.85rem; color: #666; margin: 0 0 12px 0; padding-left: 24px; line-height: 1.4; }
         .map-btn { display: block; text-align: center; padding: 10px; background: var(--main-color); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.2s; }
         .map-btn:hover { background: #c63918; }
         .space-divider { height: 30px; }
@@ -23,23 +24,26 @@
 
     <header>
         <h1>🍜 仙台ラーメンマップ</h1>
-        <p class="intro">仙台市内11エリアのラーメン専門店を網羅！</p>
+        <p class="intro">仙台市内11エリアのラーメン専門店を網羅！見たいエリアを選択して地図をチェックしよう！</p>
     </header>
 
-    <div class="ads-space">　　</div>
+    <div class="ads-space">スポンサーリンク（ここに将来広告が入ります）</div>
 
     <div class="area-list">
         <!-- 第1グループ -->
         <div class="area-card">
             <div class="area-name">📍 仙台駅西口</div>
+            <p class="area-comment">ペデストリアンデッキ下のラーメン密集地隊は圧巻。一蘭・和・潮など有名店の支店と麺屋58・しずくなどの仙台の強豪店がひしめく。</p>
             <a href="nishiguchi.jpg" target="_blank" class="map-btn">マップを見る</a>
         </div>
         <div class="area-card">
             <div class="area-name">📍 国分町周辺</div>
+            <p class="area-comment">鬼道家・二郎の2大巨頭。朝までやっているお店も多いので夜のシメにも困りません。</p>
             <a href="kokubuncho.jpg" target="_blank" class="map-btn">マップを見る</a>
         </div>
         <div class="area-card">
             <div class="area-name">📍 北仙台周辺</div>
+            <p class="area-comment">嘉一、純蓮などの定番店の他、一番星、よっちゃん・吉兆・六三四・麺まぜたん・まるさん中華などラーメン通に愛される個性派の一杯が揃うエリア。</p>
             <a href="kitasendai.jpg" target="_blank" class="map-btn">マップを見る</a>
         </div>
 
@@ -48,10 +52,12 @@
         <!-- 第2グループ -->
         <div class="area-card">
             <div class="area-name">📍 仙台駅東口</div>
+            <p class="area-comment">仙台発の名店とがし・くろくや本格派家系 横横家、ニボ味噌のスミスなど名店多し</p>
             <a href="higashiguchi.jpg" target="_blank" class="map-btn">マップを見る</a>
         </div>
         <div class="area-card">
             <div class="area-name">📍 五橋周辺</div>
+            <p class="area-comment">ボリューム満点な一杯が目に付くほか、吉松、大将のような財布に優しいお店も充実しており学生街ならではのラインナップ</p>
             <a href="itsutsubashi.jpg" target="_blank" class="map-btn">マップを見る</a>
         </div>
 
@@ -60,10 +66,12 @@
         <!-- 第3グループ -->
         <div class="area-card">
             <div class="area-name">📍 愛子・中山周辺</div>
+            <p class="area-comment">みずさわ屋をはじめとする愛子エリアと、おもと・月光・よし田など強豪ひしめく中山エリア。温泉街の名店嘉一など</p>
             <a href="ayashi_nakayama.jpg" target="_blank" class="map-btn">マップを見る</a>
         </div>
         <div class="area-card">
             <div class="area-name">📍 南光台・利府街道周辺</div>
+            <p class="area-comment">くまがい・勝・鬼山・翔ほか、他利府街道には三福・本竈・まるたけ・みそ漢など</p>
             <a href="nankodai_rifu.jpg" target="_blank" class="map-btn">マップを見る</a>
         </div>
 
@@ -72,10 +80,12 @@
         <!-- 第4グループ -->
         <div class="area-card">
             <div class="area-name">📍 若林区4号沿い・卸町周辺</div>
+            <p class="area-comment">た紅・東京屋・かんじ・さかうち・en・八千代軒などホッとする一杯が多いエリアだが、市場内の面白店りっすい社・酸辣湯麺専門店勇気など個性的ななお店も</p>
             <a href="wakabayashi_4go.jpg" target="_blank" class="map-btn">マップを見る</a>
         </div>
         <div class="area-card">
             <div class="area-name">📍 六丁の目周辺</div>
+            <p class="area-comment">今仙台で一番熱い油そばのラカンや、牛スープのひろせ,ONE、09など実力店が名を連ねる。チェーン店も選び放題</p>
             <a href="rokuchonome.jpg" target="_blank" class="map-btn">マップを見る</a>
         </div>
 
@@ -84,18 +94,19 @@
         <!-- 第5グループ -->
         <div class="area-card">
             <div class="area-name">📍 泉区・富谷周辺</div>
+            <p class="area-comment">仙台の代表的なラーメン屋 渡辺ほか、遊大、大平楽本店など。東北では珍しい蒙古タンメン中本もある</p>
             <a href="izumi_tomiya.jpg" target="_blank" class="map-btn">マップを見る</a>
         </div>
         <div class="area-card">
             <div class="area-name">📍 太白区周辺</div>
+            <p class="area-comment">有名店の長町ラーメンや杉のやを筆頭に、いぶし、 一丞、吉辰など実力店も多い。開いてたらラッキーの成りとや、一蘭、豚山など大型チェーン店も</p>
             <a href="taihaku.jpg" target="_blank" class="map-btn">マップを見る</a>
         </div>
     </div>
 
-    <div class="ads-space">　　</div>
+    <div class="ads-space">スポンサーリンク（ここに将来広告が入ります）</div>
 
-    <footer>
-        <p>&copy; 2026 ハマー</p>
-    </footer>
+<footer> <p>© ハマー All rights reserved.</p> <!-- 👇 ここからXへのリンクを追加 --> <div class="sns-links"> <a href="https://x.com/hamavelily" target="_blank" rel="noopener noreferrer"> <!-- 💡 文字で表示する場合 --> 公式X（旧Twitter）はこちら </a> </div> <!-- 👆 ここまで --> </footer>
 
 </body>
+</html>
