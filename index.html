@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>仙台ラーメンマップ | 11エリアの激ウマ情報を網羅！</title>
-    <style>
+  <style>
         :root { --main-color: #e44d26; --text-color: #333; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; color: var(--text-color); line-height: 1.6; background-color: #fcfcfc; }
         header { text-align: center; padding: 20px 0; border-bottom: 3px double var(--main-color); margin-bottom: 20px; }
@@ -16,7 +16,6 @@
         .map-btn { display: block; text-align: center; padding: 10px; background: var(--main-color); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.2s; }
         .map-btn:hover { background: #c63918; }
         .space-divider { height: 30px; }
-        .ads-space { background: #f0f0f0; text-align: center; padding: 15px; margin: 20px 0; border: 1px dashed #ccc; font-size: 0.8rem; color: #999; border-radius: 5px; }
         footer { text-align: center; margin-top: 40px; font-size: 0.8rem; color: #888; }
 
         /* 💡 ここから「おまけエリア」用の少し小さめなスタイル */
@@ -56,39 +55,39 @@
         .sns-links { margin-top: 15px; }
         .sns-links a { color: #1da1f2; text-decoration: none; font-weight: bold; }
         .sns-links a:hover { text-decoration: underline; }
-    /* 楽天アフィリエイト広告のスマホ対応（型崩れ防止） */
-.ads-space {
-  width: 100%;
-  margin: 20px auto;
-  display: flex;
-  justify-content: center;
-}
 
-.ads-space table,
-.ads-space tbody,
-.ads-space tr,
-.ads-space td,
-.ads-space div {
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-}
-
-/* スマホ画面（600px以下）では画像とテキストを縦並びにする */
-@media (max-width: 600px) {
-  .ads-space tr {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .ads-space td {
-    width: 100% !important;
-    text-align: center;
-  }
-  .ads-space img {
-    max-width: 220px !important;
-    height: auto !important;
-  }
-}</style>
+        /* 楽天アフィリエイト広告のスマホ対応（グレー枠削除＆型崩れ防止） */
+        .ads-space {
+            width: 100%;
+            margin: 25px auto;
+            display: flex;
+            justify-content: center;
+        }
+        .ads-space table,
+        .ads-space tbody,
+        .ads-space tr,
+        .ads-space td,
+        .ads-space div {
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+        }
+        /* スマホ画面（600px以下）では画像とテキストを縦並びにする */
+        @media (max-width: 600px) {
+            .ads-space tr {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .ads-space td {
+                width: 100% !important;
+                text-align: center;
+            }
+            .ads-space img {
+                max-width: 220px !important;
+                height: auto !important;
+            }
+        }
+</style>
 </head>
 <body>
 
