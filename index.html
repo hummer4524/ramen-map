@@ -56,35 +56,41 @@
         .sns-links a { color: #1da1f2; text-decoration: none; font-weight: bold; }
         .sns-links a:hover { text-decoration: underline; }
 
-        /* 楽天アフィリエイト広告のスマホ対応（グレー枠削除＆型崩れ防止） */
+        /* 楽天アフィリエイト広告のスマホ対応（完全版） */
         .ads-space {
             width: 100%;
             margin: 25px auto;
-            display: flex;
-            justify-content: center;
         }
         .ads-space table,
         .ads-space tbody,
         .ads-space tr,
         .ads-space td,
         .ads-space div {
+            width: 100% !important;
             max-width: 100% !important;
             box-sizing: border-box !important;
+        }
+        /* 「楽天で購入」の赤いボタンだけ幅を自動に戻す */
+        .ads-space a div {
+            width: auto !important;
+            min-width: 110px !important;
         }
         /* スマホ画面（600px以下）では画像とテキストを縦並びにする */
         @media (max-width: 600px) {
             .ads-space tr {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
             }
             .ads-space td {
+                display: block !important;
                 width: 100% !important;
-                text-align: center;
+                text-align: center !important;
             }
             .ads-space img {
                 max-width: 220px !important;
                 height: auto !important;
+                margin: 0 auto !important;
             }
         }
 </style>
