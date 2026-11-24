@@ -56,7 +56,39 @@
         .sns-links { margin-top: 15px; }
         .sns-links a { color: #1da1f2; text-decoration: none; font-weight: bold; }
         .sns-links a:hover { text-decoration: underline; }
-    </style>
+    /* 楽天アフィリエイト広告のスマホ対応（型崩れ防止） */
+.ads-space {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.ads-space table,
+.ads-space tbody,
+.ads-space tr,
+.ads-space td,
+.ads-space div {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* スマホ画面（600px以下）では画像とテキストを縦並びにする */
+@media (max-width: 600px) {
+  .ads-space tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ads-space td {
+    width: 100% !important;
+    text-align: center;
+  }
+  .ads-space img {
+    max-width: 220px !important;
+    height: auto !important;
+  }
+}</style>
 </head>
 <body>
 
